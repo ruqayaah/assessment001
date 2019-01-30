@@ -20,7 +20,7 @@
       .layer {
     background-image:  linear-gradient(rgba(0, 0, 80, 0.4),
           rgba(0, 0, 80, 1));
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -48,7 +48,7 @@ border-style: inset;
   </head>
   <body>
     <div class="body">
-      <div class="layer">
+      <div class="layer" style="z-index:-2;">
         <div>
             <div style="padding:20px">
              <div style="width: 50%; float:left;">
@@ -73,18 +73,18 @@ border-style: inset;
                  >For designers<br />and front-end<br />developers.</span>
                 </h1>
              </div>
-              <div
-               style="display:inline; z-index: -1; position: absolute; font-family: Georgia, 'Times New Roman', Times, serif; padding-left: 500px; margin-top:300px;">
-               <i class="fa fa-play" style="font-size: 45px;"></i><p style="color:white";>1st edition<br>best of</p>
+              <div style="width: 10%; float: right; margin-top: 280px; margin-left: 100px; margin-right: 80px">
+               <i class="fa fa-play" id="text" style="font-size: 45px; color: deeppink; z-index: -1; position: absolute;"></i>
+               <p style="color:white; padding-left: 8px; margin-top: 4px">1st edition<br>best of</p>
               </div>
             </div>
 
             <div>
-              <div style="width:50%;font-family: Georgia, 'Times New Roman', Times, serif; widows:50px; color:white; float:left; padding-left:120px; padding-top:30px;">
+              <div style="width:50%;font-family: Georgia, 'Times New Roman', Times, serif; color:white; float:left; padding-left:120px; padding-top:30px;">
                 <h5><em>October 10 &#9866 13, 2017<br>Braga, Portugal</em>
                 </h5>
               </div>
-              <div style="display:inline; width:20%; float:right;  font-family: Georgia, 'Times New Roman', Times, serif; color:white; padding-left:120px; padding-top:30px;text-align:left;">
+              <div style="width:20%; float:right;  font-family: Georgia, 'Times New Roman', Times, serif; color:white; padding-left:120px; padding-top:30px;text-align:left;">
                 <h6>
                  <em>Oct.10 & 11 &#9866 workshop,<br>12 & 13 &#9866 main conference
                  </em>
